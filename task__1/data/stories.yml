@@ -1,0 +1,100 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: scheme
+  steps:
+  - intent: scheme
+  - action: utter_scheme
+
+- story: eligible-A
+  steps:
+  - intent: eligible-A
+  - action: utter_eligible-A
+
+- story: information
+  steps:
+  - intent: information
+  - action: utter_information
+
+- story: electricity
+  steps:
+  - intent: electricity
+  - action: utter_electricity
+
+- story: lease
+  steps:
+  - intent: lease
+  - action: utter_lease
+
+- story: financial
+  steps:
+  - intent: financial
+  - action: utter_financial
+
+- story: component-B
+  steps:
+  - intent: component-B
+  - action: utter_component-B
+
+- story: eligible-B
+  steps:
+  - intent: eligible-B
+  - action: utter_eligible-B
+
+- story: subsidy-A
+  steps:
+  - intent: subsidy-A
+  - action: utter_subsidy-A
+
+- story: component-C
+  steps:
+  - intent: component-C
+  - action: utter_component-C
+
+- story: eligible-C
+  steps:
+  - intent: eligible-C
+  - action: utter_eligible-C
+
+- story: subsidy-B
+  steps:
+  - intent: subsidy-B
+  - action: utter_subsidy-B
+
+- story: component-A
+  steps:
+  - intent: component-A
+  - action: utter_component-A
+
+- story: Out of scope
+  steps:
+  - intent: out_of_scope
+  - action: utter_default

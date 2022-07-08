@@ -1,0 +1,175 @@
+version: "3.1"
+
+nlu:
+- intent: scheme
+  examples: |
+    - scheme
+    - What are the different kind of systems supported under PM-KUSUM Scheme?
+    - What is PM-Kusum Scheme?
+    - Tell me about different kind of systems supported under PM-KUSUM Scheme
+    - Give me some information about different kind of systems supported under PM-KUSUM Scheme
+    - Give me some highlights of PM-KUSUM Scheme
+    - PM Kusum Scheme
+
+- intent: component-A
+  examples: |
+    - component-A
+    - What is Component-A of PM-KUSUM Scheme?
+    - Can I get some information about component A of PM-KUSUM Scheme
+    - Tell me something about component A of PM-KUSUM Scheme
+    - Give me some informaton about component A of PM-KUSUM Scheme
+    - comp A
+    - comp A of PM kusum scheme
+
+- intent: eligible-A
+  examples: |
+    - eligible-A
+    - Who is eligible under Component-A of PM-KUSUM Scheme?
+
+- intent: electricity
+  examples: |
+    - Who will purchase the generated electricity?
+
+- intent: lease
+  examples: |
+    - Can farmers lease their land for the development of renewable energy power plant under Component-A?
+
+- intent: financial
+  examples: |
+    - What kind of financial support is available under Component-A of the Scheme?
+
+- intent: component-B
+  examples: |
+    - What is Component-B of PM-KUSUM Scheme?
+    - Inform me about Component B 
+    - Give me some highlights about Component B of PM-KUSUM Scheme
+    - Component B of PM-KUSUM Scheme
+    - Component B
+    - comp b
+    - comp b of pm kusum scheme
+
+- intent: eligible-B
+  examples: |
+    - Who is eligible under component B of PM-KUSUM?
+
+- intent: subsidy-A
+  examples: |
+    - Is there any subsidy for the installation of solar pump?
+
+- intent: component-C
+  examples: |
+    - What is Component-C of PM-KUSUM Scheme?
+
+- intent: eligible-C
+  examples: |
+    - Who is eligible under component C of PM-KUSUM?
+ 
+
+- intent: subsidy-B
+  examples: |
+    - Is there any subsidy for the installation of solarisation of pump?
+
+
+- intent: information
+  examples: |
+    - information
+    - Where can I get more information about the Scheme?
+    
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: out_of_scope
+  examples: |
+    - I want to order food
+    - What is 2 + 2?
+    - Who's the US President?
+    - I want to book a car
+    - I want to play something
+    - Show me some games
+    - I am hungry

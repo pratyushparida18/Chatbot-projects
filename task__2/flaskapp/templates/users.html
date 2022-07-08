@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <link rel='stylesheet' href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+  </head>
+<body>
+
+
+
+  <!--------------------------------HTML FOR NAVBAR--------------------------------------------------------->
+
+ <!-- <div class="menu-wrapper">
+    <div class="sidebar-header">
+      <div class="sidebar">
+        <li><a href="#">Logout</a></li>
+        <ul>
+          <li><a href="#">Users</a></li>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Change Password</a></li>
+        </ul>
+        <span class="cross-icon"><i class="fas fa-times"></i></span>
+      </div>
+    </div>
+ </div> -->
+
+  <!--------------------------------HTML FOR TABLE--------------------------------------------------------->
+  <center>
+  <table>
+
+    <tr>
+  
+      <th>Name</th>
+  
+      <th>Email</th>
+  
+  
+    </tr>
+  
+    {% for user in userDetails %}
+    <tr>
+      <td> {{user[0]}} </td>
+      <td> {{user[1]}} </td>
+    </tr>
+    {% endfor %}
+  </table>
+
+
+
+  <!--------------------------------HTML FOR DASHBOARD--------------------------------------------------------->
+  
+  <!-- <div class="class1"><p><h1>No of active users</h1></p>
+  <p><h1>{{userDetails2}}</h1></p></div>
+
+  <div class="class2"><p><h1>No of users enrolled today</h1></p>
+  <p><h1>{{userDetails3}}</h1></p></div>
+
+  <div class="class3"><p><h1>No of users enrolled this week</h1></p>
+  <p><h1>{{userDetails4}}</h1></p></div>
+  
+  <div class="class4"><p><h1>No of users enrolled this month</h1></p>
+  <p><h1>{{userDetails5}}</h1></p></div> -->
+  
+
+
+  
+</center>
+
+<!----------------------------------CSS FOR TABLE AND DASHBOARD------------------------------------------------------->
+
+<style>
+  *{
+
+margin: 0;
+
+padding: 0;
+
+font-family: arial;
+
+box-sizing: border-box;
+
+/* list-style: none;
+
+text-decoration: none; */
+
+}
+
+body{
+
+height: 150vh;
+
+display: grid;
+
+place-items: center;
+
+background: linear-gradient(120deg,#2980b9, #8e44ad);
+
+background-size: 100% 100%;
+
+background-repeat: no-repeat;
+
+/* overflow: hidden; */
+
+}
+
+table{
+
+width: 600px;
+
+box-shadow: -1px 12px 12px -6px rgba(0,0,0,0.5);
+
+position: relative;
+top: 100px;
+
+}
+
+table, td, th{
+
+padding: 20px;
+
+border: 1px solid lightgray;
+
+border-collapse: collapse;
+
+text-align: center;
+
+cursor: pointer;
+
+}
+
+td{
+
+font-size: 18px;
+
+}
+
+th{
+
+background-color: blue;
+
+color: white;
+
+}
+
+tr:nth-child(odd){
+
+background-color: lightblue;
+
+}
+
+tr:nth-child(odd):hover{
+
+background-color: dodgerblue;
+
+color: white;
+
+transform: scale(1.2);
+
+transition: transform 300ms ease-in;
+
+}
+
+tr:nth-child(even){
+
+background-color: #ededed;
+
+}
+
+tr:nth-child(even):hover{
+
+background-color: lightgray;
+
+transform: scale(1.2);
+
+transition: transform 300ms ease-in;
+
+
+}
+
+/* .class1{
+  position: relative;
+  top: 10px;
+}
+
+.class2{
+  position: relative;
+  top: 50px;
+}
+
+.class3{
+  position: relative;
+  top: 90px;
+}
+
+.class4{
+  position: relative;
+  top: 130px;
+} */
+
+
+/*--------------------------CSS FOR NAVBAR------------------------------------*/
+/* .sideBar {
+    position: relative;
+    z-index: 20;
+    height: 100vh;
+    width: 25%;
+    color: white;
+    background-color: #001629;
+    transition: 0.3s ease-in-out;
+    right: -500px;
+} */
+      
+</style>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,186 @@
+version: "3.1"
+
+intents:
+  - scheme
+  - eligible-A
+  - electricity
+  - lease
+  - financial
+  - component-B
+  - eligible-B
+  - subsidy-A
+  - component-C
+  - eligible-C
+  - subsidy-B
+  - information
+  - component-A
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - out_of_scope
+
+
+responses:
+  utter_eligible-A:
+  - text: "Individual farmers/ group of farmers/ cooperatives/panchayats/ Farmer Producer Organisations (FPO)/Water User associations (WUA). Land on which the project is proposed to be installed should be within 5 km from the nearest electricity sub-station."
+    buttons:
+      - title: "Lease of land"
+        payload: '/lease'
+      - title: "Financial support available under Component-A"
+        payload: '/financial'
+      - title: "Know more about component B"
+        payload: '/component-B'
+      - title: "Know more about component C"
+        payload: '/component-C'
+
+  utter_electricity:
+  - text: "Power generated will be purchased by the local electricity distribution companies (Discoms)"
+  
+  utter_lease:
+  - text: "Yes, farmers can either install renewable power project on their land or lease the land on rent to a developer at mutually agreed terms between the parties."
+    buttons:
+      - title: "Who are eligible"
+        payload: '/eligible-A'
+      - title: "Financial support available under Component-A"
+        payload: '/financial'
+      - title: "Know more about component B"
+        payload: '/component-B'
+      - title: "Know more about component C"
+        payload: '/component-C'
+
+  utter_financial:
+  - text: "The renewable power generated will be purchased by DISCOMs at a pre-fixed levelised tariff. The duration of PPA will be 25 years from Commercial Operation Date (COD) of the project. Procurement based incentive (PBI) of 40 paisa per unit of electricity generated or Rs. 6.6 lakh per MW per annum, whichever is lower, will be provided to DISCOM for buying electricity generated for five years. "
+    buttons:
+      - title: "Who are eligible"
+        payload: '/eligible-A'
+      - title: "Lease of land"
+        payload: '/lease'
+      - title: "Know more about component B"
+        payload: '/component-B'
+      - title: "Know more about component C"
+        payload: '/component-C'
+      
+  utter_component-B:
+  - text: "Under this Component, farmers can replace their existing diesel poweredagriculture pumps with standalone solar pumpsof capacity up to 7.5 HP in off-grid areas. Pumps of capacity higher than 7.5 HP may be allowed, however, the central subsidy will be limited to the subsidy applicable for pump of 7.5 HP."
+    buttons:
+      - title: "Who are eligible"
+        payload: '/eligible-B'
+      - title: "Subsidy for the installation of solar pump"
+        payload: '/subsidy-A'
+      - title: "Know more about component A"
+        payload: '/component-A'
+      - title: "Know more about component C"
+        payload: '/component-C'
+
+  utter_eligible-B:
+  - text: "Individual farmers, Water User Associations and community/cluster based irrigation system will be covered under this component."
+    buttons:
+      - title: "Subsidy for the installation of solar pump"
+        payload: '/subsidy-A'
+      - title: "Know more about component A"
+        payload: '/component-A'
+      - title: "Know more about component C"
+        payload: '/component-C'
+
+  utter_subsidy-A:
+  - text: "For all states except for North-eastern States, Hill States/UTs and Island UTs, subsidy of 30%, each by Central and State Governments will be provided, and the remaining 40% will be invested by the farmer for installation of solar pump. Subsidy in percentage mentioned above is applicable on benchmark cost or tender cost, whichever is lower. For North-eastern States, Himachal Pradesh, Uttarakhand, Jammu and Kashmir/Ladakh and Island UTs, subsidy of 50% will be provided by Central Government and at least 30% will be provided by the State Government for installation of solar pump. Farmer will have to invest balance 20%"
+    buttons:
+      - title: "Who are eligible"
+        payload: '/eligible-B'
+      - title: "Know more about component A"
+        payload: '/component-A'
+      - title: "Know more about component C"
+        payload: '/component-C'
+
+  utter_component-C:
+  - text: "Under this Component, farmers can solarize their existing grid connected agriculture pumps of capacity up to 7.5 HP. Solar PV capacity up to two times of pump capacity in kW is allowed under the scheme.However, States may choose to allow lower solar PV capacity, which in no case will be less than pump capacity in HP. The farmer will be able to use the generated solar power to meet the irrigation needs and the excess solar power will be sold to DISCOMs."
+    buttons:
+      - title: "Who are eligible"
+        payload: '/eligible-C'
+      - title: "Subsidy for the installation of solarisation pump"
+        payload: '/subsidy-B'
+      - title: "Know more about component B"
+        payload: '/component-B'
+      - title: "Know more about component C"
+        payload: '/component-C'
+
+  utter_eligible-C:
+  - text: "Individual farmers, water user associations and community/cluster based irrigation system will also be covered under this component. "
+    buttons:
+      - title: "Subsidy for the installation of solarisation pump"
+        payload: '/subsidy-B'
+      - title: "Know more about component B"
+        payload: '/component-B'
+      - title: "Know more about component C"
+        payload: '/component-C'
+
+  utter_subsidy-B:
+  - text: "For all states except for North-eastern States, Hill States/UTs and Island UTs, subsidy of 30%, each by Central and State Governments will be provided, and the remaining 40% will be invested by the farmer for solarization of existing pumps. Subsidy in percentage mentioned above is applicable on benchmark cost or tender cost, whichever is lower. For North-eastern States, Himachal Pradesh, Uttarakhand, Jammu and Kashmir/Ladakh and Island UTs, subsidy of 50% will be provided by Central Government and at least 30% will be provided by the State Government for solarization of existing pumps. Farmer will have to invest balance 20%. "
+    buttons:
+      - title: "Who are eligible"
+        payload: '/eligible-C'
+      - title: "Know more about component B"
+        payload: '/component-B'
+      - title: "Know more about component C"
+        payload: '/component-C'
+
+  utter_information:
+  - text: "For more information, please visit https://mnre.gov.in/solar/schemes/ or call at toll free number 1800-180-3333."
+  
+  utter_scheme:
+  - text: "PM-KUSUM Scheme supports three different kind of installations, known as three components of the Scheme as given below:
+           Component-A: Setting up of decentralized ground/ stilt mounted grid connected solar or other renewable energy based power plants up to 2 MW capacity
+           Component-B: Installation of stand-alone solar agriculture pumps of capacity up to 7.5 HP
+           Component-C: Solarisation of existing grid connected agriculture pumps of capacity up to 7.5 HP"
+    buttons:
+      - title: "Know more about component A"
+        payload: '/component-A'
+      - title: "Know more about component B"
+        payload: '/component-B'
+      - title: "Know more about component C"
+        payload: '/component-C'
+  
+  utter_component-A:
+  - text: "Under this component, solar or other renewable energy based power plants of capacity 500 kW to 2 MW can be installed on barren or uncultivable agriculture land mainly. Agriculture land is also permitted under this scheme provided that solar plants are installed in slit fashion (i.e. raised structure for installation of solar panels) and with adequate spacing between panel rows for ensuring that farming activity is not affected."
+    buttons:
+      - title: "Who are eligible"
+        payload: '/eligible-A'
+      - title: "Lease of land"
+        payload: '/lease'
+      - title: "Financial support available under Component-A"
+        payload: '/financial'
+      - title: "Know more about component B"
+        payload: '/component-B'
+      - title: "Know more about component C"
+        payload: '/component-C'
+
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_default:
+  - text: I'm sorry, I didn't quite understand that. Could you rephrase?
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
